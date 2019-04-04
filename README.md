@@ -1,0 +1,2 @@
+# examples
+faast.js examples
