@@ -1,5 +1,7 @@
 # faast.js examples
 
+These examples demonstrate how to use [faast.js](https://github.com/faastjs/faast.js) in different ways.
+
 | example                                                  | description                                    | language   |
 | -------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | [aws-cost-analyzer-js](./aws-cost-analyzer-js/README.md) | cost analyzer example                          | JavaScript |
