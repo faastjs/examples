@@ -9,5 +9,6 @@
 | [aws-puppeteer-ts](./aws-puppeteer-ts/README.md)         | example using puppeteer as a native dependency | TypeScript |
 | [aws-sharp-ts](./aws-sharp-ts/README.md)                 | example using sharp as a native dependency     | TypeScript |
 | [aws-ts](./aws-ts/README.md)                             | aws example showing common features            | TypeScript |
+| [gcp-ts](./gcp-ts/README.md)                             | google cloud example showing common features   | TypeScript |
 | [hello-world-js](./hello-world-js/README.md)             | hello world                                    | JavaScript |
 | [hello-world-ts](./hello-world-ts/README.md)             | hello world                                    | TypeScript |
