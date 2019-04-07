@@ -1,0 +1,19 @@
+{
+    "name": "faastjs-example-aws-puppeteer-ts",
+    "main": "index.ts",
+    "license": "Apache 2.0",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "chrome-aws-lambda": "^1.14.0",
+        "faastjs": "latest",
+        "puppeteer-core": "^1.14.0"
+    },
+    "devDependencies": {
+        "@types/puppeteer-core": "^1.9.0",
+        "@types/node": "^11.13.0"
+    }
+}

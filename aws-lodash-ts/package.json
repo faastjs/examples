@@ -1,0 +1,18 @@
+{
+    "name": "faastjs-example-aws-lodash-ts",
+    "main": "index.ts",
+    "license": "Apache 2.0",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "faastjs": "latest",
+        "lodash": "^4.17.11"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.123",
+        "@types/node": "^11.13.0"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "faastjs-example-aws-ts",
+    "main": "index.ts",
+    "license": "Apache 2.0",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "faastjs": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "^11.13.0"
+    }
+}

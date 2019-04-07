@@ -57,5 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
-# next.js build output
-.next
+package-lock.json
+cost.csv
+dist/
+.vscode/
+output.png
+.DS_Store
