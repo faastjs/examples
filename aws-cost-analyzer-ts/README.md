@@ -2,6 +2,8 @@
 
 The cost analyzer summarizes the cost of running a particular workload against multiple configurations. In this example, we generate 100,000 random numbers in each workload. For each memory size, the workload is executed 10 times. Memory sizes from 1024MB to 2048MB are analyzed and the results printed in real time to the console and also output in CSV format to the file "cost.csv".
 
+Note: if you only need a cost estimate for a specific run of faast.js you can use cost snapshots. See the [aws-ts](../aws-ts/README.md) example.
+
 ## Prerequisites
 
 -   Node 8+.
