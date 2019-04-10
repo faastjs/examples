@@ -31,7 +31,7 @@ Using `npm run watch` will automatically compile changes on the fly if you're mo
 ## Running
 
 ```shell
-Usage: node runfaast.js [options] <command> [args...]
+Usage: node dist/runfaast.js [options] <command> [args...]
 
 Run a command on lambda using faast.js
 
