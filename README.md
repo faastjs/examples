@@ -4,6 +4,7 @@ These examples demonstrate how to use [faast.js](https://github.com/faastjs/faas
 
 | example                         | description                                           | language   |
 | ------------------------------- | ----------------------------------------------------- | ---------- |
+| [aws-command][]                 | run a command on AWS                                  | TypeScript |
 | [aws-cost-analyzer-js][]        | cost analyzer example                                 | JavaScript |
 | [aws-cost-analyzer-ts][]        | cost analyzer example                                 | TypeScript |
 | [aws-js][]                      | aws example showing common feaures                    | JavaScript |
@@ -17,6 +18,7 @@ These examples demonstrate how to use [faast.js](https://github.com/faastjs/faas
 | [hello-world-js][]              | hello world                                           | JavaScript |
 | [hello-world-ts][]              | hello world                                           | TypeScript |
 
+[aws-command]: ./aws-command
 [aws-cost-analyzer-js]: ./aws-cost-analyzer-js
 [aws-cost-analyzer-ts]: ./aws-cost-analyzer-ts
 [aws-js]: ./aws-js
