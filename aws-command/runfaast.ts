@@ -1,4 +1,4 @@
-import { faastAws } from "faastjs";
+import { faast } from "faastjs";
 import { existsSync } from "fs";
 import { resolve } from "path";
 import * as funcs from "./functions";
@@ -9,29 +9,37 @@ function help() {
 Run a command on lambda using faast.js
 
 Options:
-  -d, --dir      Send a directory to the lambda function and make it available 
-                 in the current working directory in the cloud function.
-  -h, --help     output usage information`);
+  -d, --dir <dir>   Send a directory to the lambda function and make it available 
+                    in the current working directory in the cloud function.
+  -l, --local       Run the command locally instead of on AWS.
+  -h, --help        Uutput usage information`);
     process.exit(0);
 }
 
 (async () => {
     const [, , ...args] = process.argv;
     let dir = undefined;
+    let local = false;
     if (args.length === 0) {
         help();
     }
-    switch (args[0]) {
-        case "-d":
-        case "--dir": {
-            args.shift();
-            dir = args.shift()!;
-            break;
-        }
-        case "-h":
-        case "--help": {
-            help();
-            break;
+    while (args.length > 0 && args[0].startsWith("-")) {
+        switch (args[0]) {
+            case "-d":
+            case "--dir":
+                args.shift();
+                dir = args.shift()!;
+                break;
+
+            case "-l":
+            case "--local":
+                args.shift();
+                local = true;
+                break;
+
+            case "-h":
+            case "--help":
+                help();
         }
     }
     if (args.length === 0) {
@@ -53,7 +61,8 @@ Options:
     console.log(`Cwd: ${process.cwd()}`);
 
     console.log(`Creating cloud function.`);
-    const m = await faastAws(funcs, "./functions", {
+    const provider = local ? "local" : "aws";
+    const m = await faast(provider, funcs, "./functions", {
         memorySize: 1728,
         timeout: 600,
         addDirectory: resolvedDir
