@@ -1,5 +1,7 @@
 # faast.js examples
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/faastjs/examples.svg?token=c2ecfc6b7b08b50ba31f7fa557a497916908d14922985bfd81d24b517979d6a7&ts=1555123435025)](https://greenkeeper.io/)
+
 These examples demonstrate how to use [faast.js](https://github.com/faastjs/faast.js) in different ways.
 
 | example                         | description                                           | language   |
