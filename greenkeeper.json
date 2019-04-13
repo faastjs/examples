@@ -1,0 +1,21 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "aws-command/package.json",
+        "aws-cost-analyzer-js/package.json",
+        "aws-cost-analyzer-ts/package.json",
+        "aws-js/package.json",
+        "aws-lodash-ts/package.json",
+        "aws-puppeteer-ts/package.json",
+        "aws-sharp-ts/package.json",
+        "aws-ts/package.json",
+        "cost-analyzer-comparison-ts/package.json",
+        "gcp-js/package.json",
+        "gcp-ts/package.json",
+        "hello-world-js/package.json",
+        "hello-world-ts/package.json"
+      ]
+    }
+  }
+}
