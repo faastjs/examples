@@ -2,7 +2,7 @@ const { faastGoogle } = require("faastjs");
 const funcs = require("./functions");
 
 async function main() {
-    const m = await faastGoogle(funcs, "./functions", {
+    const m = await faastGoogle(funcs, {
         memorySize: 1024,
         timeout: 60,
         region: "us-central1"

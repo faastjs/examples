@@ -62,7 +62,7 @@ Options:
 
     console.log(`Creating cloud function.`);
     const provider = local ? "local" : "aws";
-    const m = await faast(provider, funcs, "./functions", {
+    const m = await faast(provider, funcs, {
         memorySize: 1728,
         timeout: 600,
         addDirectory: resolvedDir

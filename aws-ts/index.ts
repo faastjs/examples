@@ -2,7 +2,7 @@ import { faastAws } from "faastjs";
 import * as funcs from "./functions";
 
 async function main() {
-    const m = await faastAws(funcs, "./functions", {
+    const m = await faastAws(funcs, {
         memorySize: 1728,
         timeout: 60,
         region: "us-west-1"

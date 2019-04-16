@@ -2,7 +2,7 @@ const { faastAws } = require("faastjs");
 const funcs = require("./functions");
 
 async function main() {
-    const m = await faastAws(funcs, "./functions", {
+    const m = await faastAws(funcs, {
         memorySize: 1728,
         timeout: 60,
         region: "us-west-1"

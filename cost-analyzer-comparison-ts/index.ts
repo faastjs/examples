@@ -1,11 +1,11 @@
 import { CostAnalyzer, FaastModule } from "faastjs";
-import * as m from "./functions";
+import * as funcs from "./functions";
 import { writeFile as fsWriteFile } from "fs";
 import { promisify } from "util";
 
 const writeFile = promisify(fsWriteFile);
 
-async function work(faastModule: FaastModule<typeof m>) {
+async function work(faastModule: FaastModule<typeof funcs>) {
     await faastModule.functions.random(1000000);
 }
 
@@ -21,12 +21,7 @@ const configurations = [
 ];
 
 async function compareCloudCosts() {
-    const result = await CostAnalyzer.analyze(
-        m,
-        require.resolve("./functions"),
-        { work },
-        configurations
-    );
+    const result = await CostAnalyzer.analyze({ funcs, work, configurations });
 
     await writeFile("cost.csv", result.csv());
 }

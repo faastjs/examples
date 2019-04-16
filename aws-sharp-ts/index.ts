@@ -3,7 +3,7 @@ import * as funcs from "./functions";
 import { writeFileSync } from "fs";
 
 async function main() {
-    const m = await faast("aws", funcs, "./functions", {
+    const m = await faast("aws", funcs, {
         packageJson: {
             dependencies: {
                 sharp: "latest"

@@ -4,9 +4,8 @@ const { writeFileSync } = require("fs");
 
 async function main() {
     const result = await CostAnalyzer.analyze(
-        funcs,
-        "./functions",
         {
+            funcs,
             work: async m => {
                 const promises = [];
                 for (let i = 0; i < 10; i++) {
