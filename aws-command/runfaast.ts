@@ -12,7 +12,7 @@ Options:
   -d, --dir <dir>   Send a directory to the lambda function and make it available 
                     in the current working directory in the cloud function.
   -l, --local       Run the command locally instead of on AWS.
-  -h, --help        Uutput usage information`);
+  -h, --help        Output usage information`);
     process.exit(0);
 }
 
