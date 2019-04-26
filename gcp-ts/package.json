@@ -11,6 +11,6 @@
         "faastjs": "latest"
     },
     "devDependencies": {
-        "@types/node": "11.13.7"
+        "@types/node": "11.13.8"
     }
 }
