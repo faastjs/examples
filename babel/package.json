@@ -1,0 +1,17 @@
+{
+    "name": "faastjs-example-babel",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "babel index.mjs functions.mjs --out-dir lib",
+        "clean": "rm -rf lib"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.4.4",
+        "faastjs": "latest"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.4",
+        "@babel/preset-env": "^7.4.4"
+    }
+}
