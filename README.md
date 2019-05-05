@@ -12,6 +12,7 @@ These examples demonstrate how to use [faast.js](https://github.com/faastjs/faas
 | [aws-puppeteer-ts][]            | example using puppeteer as a native dependency        | TypeScript |
 | [aws-sharp-ts][]                | example using sharp as a native dependency            | TypeScript |
 | [aws-ts][]                      | aws example showing common features                   | TypeScript |
+| [babel][]                       | babel example                                         | JavaScript |
 | [cost-analyzer-comparison-ts][] | compare AWS Lambda and Google Cloud Functions pricing | TypeScript |
 | [gcp-ts][]                      | google cloud example showing common features          | TypeScript |
 | [gcp-js][]                      | google cloud example showing common features          | JavaScript |
@@ -26,6 +27,7 @@ These examples demonstrate how to use [faast.js](https://github.com/faastjs/faas
 [aws-puppeteer-ts]: ./aws-puppeteer-ts
 [aws-sharp-ts]: ./aws-sharp-ts
 [aws-ts]: ./aws-ts
+[babel]: ./babel
 [cost-analyzer-comparison-ts]: ./cost-analyzer-comparison-ts
 [gcp-ts]: ./gcp-ts
 [gcp-js]: ./gcp-js
