@@ -1,7 +1,7 @@
 {
     "name": "faastjs-example-aws-command",
     "main": "dist/runfaast.js",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
