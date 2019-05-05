@@ -63,3 +63,4 @@ dist/
 .vscode/
 output.png
 .DS_Store
+lib/
