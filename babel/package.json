@@ -6,12 +6,12 @@
         "clean": "rm -rf lib"
     },
     "dependencies": {
-        "@babel/polyfill": "^7.4.4",
+        "@babel/polyfill": "7.4.4",
         "faastjs": "latest"
     },
     "devDependencies": {
-        "@babel/cli": "^7.4.4",
-        "@babel/core": "^7.4.4",
-        "@babel/preset-env": "^7.4.4"
+        "@babel/cli": "7.4.4",
+        "@babel/core": "7.4.4",
+        "@babel/preset-env": "7.4.4"
     }
 }
