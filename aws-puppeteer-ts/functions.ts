@@ -12,9 +12,7 @@ export async function runPuppeteer(url: string) {
         let page = await browser.newPage();
         await page.goto(url);
         const title = await page.title();
-        const screenshot = await page.screenshot({
-            encoding: "base64"
-        });
+        const screenshot = await page.screenshot({ encoding: "binary" });
         return { title, screenshot };
     } finally {
         if (browser !== null) {
