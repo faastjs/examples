@@ -12,5 +12,5 @@ export async function runSharp() {
         .png()
         .toBuffer();
 
-    return semiTransparentRedPng.toJSON();
+    return semiTransparentRedPng;
 }

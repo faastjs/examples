@@ -12,8 +12,7 @@ async function main() {
     });
     try {
         const rv = await m.functions.runSharp();
-        const buf = Buffer.from(rv.data);
-        writeFileSync("output.png", buf);
+        writeFileSync("output.png", rv);
         console.log(`wrote output.png`);
     } finally {
         await m.cleanup();
