@@ -2,6 +2,9 @@
     "name": "faastjs-example-hello-world-js",
     "main": "index.js",
     "license": "Apache-2.0",
+    "scripts": {
+        "test": "node index.js"
+    },
     "dependencies": {
         "faastjs": "latest"
     }

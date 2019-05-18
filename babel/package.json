@@ -3,7 +3,8 @@
     "license": "Apache-2.0",
     "scripts": {
         "build": "babel index.mjs functions.mjs --out-dir lib",
-        "clean": "rm -rf lib"
+        "clean": "rm -rf lib",
+        "test": "node lib/index.js"
     },
     "dependencies": {
         "@babel/polyfill": "7.4.4",

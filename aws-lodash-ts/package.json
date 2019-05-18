@@ -5,7 +5,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
-        "clean": "rm -rf dist"
+        "clean": "rm -rf dist",
+        "test": "node dist/index.js"
     },
     "dependencies": {
         "faastjs": "latest",

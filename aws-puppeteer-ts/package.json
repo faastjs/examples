@@ -5,7 +5,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
-        "clean": "rm -rf dist"
+        "clean": "rm -rf dist",
+        "test": "node dist/index.js"
     },
     "dependencies": {
         "chrome-aws-lambda": "^1.14.0",
