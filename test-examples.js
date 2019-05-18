@@ -1,7 +1,7 @@
 "use strict";
 
-const { readdirSync, statSync } = require("fs");
-const { resolve } = require("path");
+const { readdirSync, statSync, readFileSync } = require("fs");
+const { resolve, join } = require("path");
 const { exec } = require("child_process");
 
 async function execCmd(cmd, options) {
@@ -21,19 +21,12 @@ async function execCmd(cmd, options) {
 
 async function runTest(test, pkg) {
     try {
-        let lang = "js";
-        if (test.match(/-ts$/)) {
-            lang = "ts";
-        }
-        const entries = readdirSync(test);
-        if (entries.find(file => file === "tsconfig.json")) {
-            lang = "ts";
-        }
         await execCmd("npm install", { cwd: test });
         if (pkg) {
             await execCmd(`npm install ${pkg}`, { cwd: test });
         }
-        if (lang === "ts") {
+        const pjs = JSON.parse(readFileSync(join(test, "package.json")));
+        if (pjs.scripts && pjs.scripts.build) {
             await execCmd("npm run build", { cwd: test });
         }
         await execCmd("npm run test", { cwd: test });
