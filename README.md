@@ -33,3 +33,7 @@ These examples demonstrate how to use [faast.js](https://github.com/faastjs/faas
 [gcp-js]: ./gcp-js
 [hello-world-js]: ./hello-world-js
 [hello-world-ts]: ./hello-world-ts
+
+## test-examples.js
+
+The `test-examples.js` script is used by the faast.js testsuite. It is not needed for running individual examples.
