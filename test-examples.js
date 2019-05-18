@@ -44,11 +44,10 @@ async function main(pkg) {
             entry[0] !== "." &&
             statSync(entry).isDirectory()
     );
-    const promises = entries.map(dir => {
+    for (const dir of entries) {
         console.log(`testing ${dir}`);
-        return runTest(dir, pkg);
-    });
-    await Promise.all(promises);
+        await runTest(dir, pkg);
+    }
 }
 
 let pkg;
