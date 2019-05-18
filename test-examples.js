@@ -40,7 +40,7 @@ async function runTest(test, pkg) {
         console.log(`[pass] ${test}`);
     } catch (err) {
         console.log(`[fail] ${test}: ${err}`);
-        throw err;
+        process.exit(1);
     }
 }
 
