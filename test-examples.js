@@ -49,8 +49,7 @@ async function main(pkg) {
         entry =>
             entry !== "aws-top-packages" &&
             entry[0] !== "." &&
-            statSync(entry).isDirectory() &&
-            entry === "aws-ts"
+            statSync(entry).isDirectory()
     );
     const promises = entries.map(dir => {
         console.log(`testing ${dir}`);
