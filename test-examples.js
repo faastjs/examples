@@ -4,6 +4,8 @@ const { readdirSync, statSync, readFileSync } = require("fs");
 const { resolve, join } = require("path");
 const { exec } = require("child_process");
 
+let faastjsPackage;
+
 async function execCmd(cmd, options) {
     await new Promise((resolve, reject) =>
         exec(cmd, options, (err, stdout, stderr) => {
@@ -19,11 +21,11 @@ async function execCmd(cmd, options) {
     );
 }
 
-async function runTest(test, pkg) {
+async function runTest(test) {
     try {
         await execCmd("npm install", { cwd: test });
-        if (pkg) {
-            await execCmd(`npm install ${pkg}`, { cwd: test });
+        if (faastjsPackage) {
+            await execCmd(`npm install ${faastjsPackage}`, { cwd: test });
         }
         const pjs = JSON.parse(readFileSync(join(test, "package.json")));
         if (pjs.scripts && pjs.scripts.build) {
@@ -37,22 +39,34 @@ async function runTest(test, pkg) {
     }
 }
 
-async function main(pkg) {
-    const entries = readdirSync(".").filter(
+let queue = [];
+
+async function work() {
+    const dir = queue.pop();
+    if (dir === undefined) {
+        return;
+    }
+    console.log(`testing ${dir}`);
+    await runTest(dir);
+    await work();
+}
+
+async function main() {
+    queue = readdirSync(".").filter(
         entry =>
             entry !== "aws-top-packages" &&
             entry[0] !== "." &&
             statSync(entry).isDirectory()
     );
-    for (const dir of entries) {
-        console.log(`testing ${dir}`);
-        await runTest(dir, pkg);
-    }
+
+    work();
+    work();
+    work();
+    work();
 }
 
-let pkg;
 if (process.argv[2]) {
-    pkg = resolve(process.argv[2]);
-    console.log(`resolved ${pkg}`);
+    faastjsPackage = resolve(process.argv[2]);
+    console.log(`resolved ${faastjsPackage}`);
 }
-main(pkg);
+main();
