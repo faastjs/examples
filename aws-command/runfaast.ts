@@ -65,7 +65,7 @@ Options:
     const m = await faast(provider, funcs, {
         memorySize: 1728,
         timeout: 600,
-        include: [resolvedDir]
+        include: [resolvedDir!]
     });
     console.log(`Logs: ${m.logUrl()}`);
     try {
