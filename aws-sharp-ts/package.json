@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "faastjs": "latest",
-        "sharp": "^0.23.0"
+        "sharp": "^0.26.3"
     },
     "devDependencies": {
         "@types/sharp": "0.23.0",
