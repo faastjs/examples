@@ -6,12 +6,6 @@ The cost analyzer summarizes the cost of running a particular workload against m
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 -   AWS account and IAM user. See faast.js documentation for account setup instructions.
 
 -   Google Cloud account. See faast.js documentation for account setup instructions.

@@ -10,5 +10,8 @@
     },
     "dependencies": {
         "faastjs": "latest"
+    },
+    "devDependencies": {
+        "typescript": "^4.1.3"
     }
 }

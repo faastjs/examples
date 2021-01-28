@@ -6,12 +6,6 @@ This example demonstrates some typical Google Cloud options in faast.js in TypeS
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 ## Installing dependencies
 
 ```shell

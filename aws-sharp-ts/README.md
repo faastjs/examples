@@ -6,12 +6,6 @@ This example demonstrates the use of the `packageJson` option to work with the [
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 ## Installing dependencies
 
 ```shell

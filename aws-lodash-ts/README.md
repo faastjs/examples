@@ -8,12 +8,6 @@ In this example, the code in `functions.ts` imports `lodash` and it just works.
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 ## Installing dependencies
 
 ```shell

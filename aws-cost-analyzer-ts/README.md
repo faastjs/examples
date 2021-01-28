@@ -8,12 +8,6 @@ Note: if you only need a cost estimate for a specific run of faast.js you can us
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 -   AWS account and IAM user. See faast.js documentation for account setup instructions.
 
 ## Installing dependencies

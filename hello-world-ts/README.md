@@ -6,12 +6,6 @@ This example demonstrates basic use of faast.js in TypeScript, using the "local"
 
 -   Node 8+.
 
--   TypeScript 3.3 or above. Install globally:
-
-    ```shell
-    $ npm install -g typescript
-    ```
-
 ## Installing dependencies
 
 ```shell
