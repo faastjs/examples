@@ -9,7 +9,7 @@
         "test": "node dist/index.js"
     },
     "dependencies": {
-        "chrome-aws-lambda": "^2.0.0",
+        "chrome-aws-lambda": "^8.0.0",
         "faastjs": "latest",
         "puppeteer-core": "^2.0.0"
     },
