@@ -9,7 +9,7 @@ async function work(faastModule: FaastModule<typeof funcs>) {
     await faastModule.functions.random(1000000);
 }
 
-const memorySizes = [128, 256, 512, 1024, 1728, 2048];
+const memorySizes = [256, 512, 1024, 1728, 2048];
 
 const configurations = [
     ...CostAnalyzer.awsConfigurations.filter(c =>
