@@ -11,7 +11,7 @@
     "dependencies": {
         "chrome-aws-lambda": "^2.0.0",
         "faastjs": "latest",
-        "puppeteer-core": "^2.0.0"
+        "puppeteer-core": "^13.0.0"
     },
     "devDependencies": {
         "@types/node": "11.13.14",
