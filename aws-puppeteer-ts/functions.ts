@@ -1,5 +1,5 @@
-import * as puppeteer from "puppeteer-core";
-import * as chromium from "chrome-aws-lambda";
+import puppeteer from "puppeteer-core";
+import chromium from "chrome-aws-lambda";
 
 export async function runPuppeteer(url: string) {
     const browser = await puppeteer.launch({

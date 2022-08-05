@@ -5,10 +5,11 @@ import { writeFileSync } from "fs";
 async function main() {
     const m = await faastAws(funcs, {
         memorySize: 1728,
+        timeout: 180,
         packageJson: {
             dependencies: {
-                "chrome-aws-lambda": "latest",
-                "puppeteer-core": "latest"
+                "chrome-aws-lambda": "^10.1.0",
+                "puppeteer-core": "^10.1.0"
             }
         }
     });

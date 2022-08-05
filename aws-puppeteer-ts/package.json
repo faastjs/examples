@@ -9,13 +9,13 @@
         "test": "node dist/index.js"
     },
     "dependencies": {
-        "chrome-aws-lambda": "^2.0.0",
+        "chrome-aws-lambda": "^10.1.0",
         "faastjs": "latest",
-        "puppeteer-core": "^2.0.0"
+        "puppeteer-core": "^10.1.0"
     },
     "devDependencies": {
         "@types/node": "11.13.14",
-        "@types/puppeteer-core": "2.0.0",
+        "@types/puppeteer-core": "^5",
         "typescript": "^4.1.3"
     }
 }
