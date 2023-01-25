@@ -7,12 +7,12 @@
         "test": "node lib/index.js"
     },
     "dependencies": {
-        "@babel/polyfill": "7.7.0",
+        "@babel/polyfill": "7.12.1",
         "faastjs": "latest"
     },
     "devDependencies": {
-        "@babel/cli": "7.7.4",
-        "@babel/core": "7.7.4",
-        "@babel/preset-env": "7.7.4"
+        "@babel/cli": "7.20.7",
+        "@babel/core": "7.20.12",
+        "@babel/preset-env": "7.20.2"
     }
 }
