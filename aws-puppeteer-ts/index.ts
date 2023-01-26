@@ -8,8 +8,8 @@ async function main() {
         timeout: 180,
         packageJson: {
             dependencies: {
-                "chrome-aws-lambda": "^10.1.0",
-                "puppeteer-core": "^10.1.0"
+                "@sparticuz/chromium": "^103.0.0",
+                "puppeteer-core": "^14.4.1"
             }
         }
     });
