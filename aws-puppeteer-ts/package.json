@@ -9,7 +9,7 @@
         "test": "node dist/index.js"
     },
     "dependencies": {
-        "@sparticuz/chromium": "^103.0.0",
+        "@sparticuz/chromium": "^110.0.0",
         "faastjs": "latest",
         "puppeteer-core": "^14.4.1"
     },
