@@ -59,9 +59,9 @@ async function main() {
             statSync(entry).isDirectory()
     );
 
-    // work();
-    // work();
-    // work();
+    work();
+    work();
+    work();
     work();
 }
 
