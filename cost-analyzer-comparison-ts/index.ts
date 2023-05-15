@@ -15,9 +15,6 @@ const configurations = [
     ...CostAnalyzer.awsConfigurations.filter(c =>
         memorySizes.find(m => m === c.options.memorySize!)
     )
-    // ...CostAnalyzer.googleConfigurations.filter(c =>
-    //     memorySizes.find(m => m === c.options.memorySize!)
-    // )
 ];
 
 async function compareCloudCosts() {
