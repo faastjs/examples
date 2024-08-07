@@ -11,7 +11,7 @@
     "dependencies": {
         "@sparticuz/chromium": "^103.0.0",
         "faastjs": "latest",
-        "puppeteer-core": "^14.4.1"
+        "puppeteer-core": "^23.0.0"
     },
     "devDependencies": {
         "@types/node": "18.15.3",
