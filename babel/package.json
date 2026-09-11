@@ -11,8 +11,8 @@
         "faastjs": "latest"
     },
     "devDependencies": {
-        "@babel/cli": "7.21.0",
+        "@babel/cli": "8.0.5",
         "@babel/core": "7.21.0",
-        "@babel/preset-env": "7.20.2"
+        "@babel/preset-env": "8.0.5"
     }
 }
